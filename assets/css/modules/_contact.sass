@@ -1,0 +1,85 @@
+.contact
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: none !important  // Force removal of background image
+  display: flex
+  justify-content: center
+  align-items: center
+
+.contact--lockup
+  position: relative
+  display: flex
+  width: 900px
+  max-width: 75%
+  height: 100%
+  align-items: center
+  justify-content: flex-end
+  margin: 0 auto
+
+  @media (max-width: 1180px)
+    max-width: 90%
+
+  @media (max-width: 767px)
+    justify-content: center
+    width: 100%
+
+  .modal
+    padding: 45px
+    text-align: center
+    background-color: #000  // Use actual color values
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.75)
+
+    &--information
+      p, a
+        display: block
+        margin: 14px 0
+        text-decoration: none
+        color: #fff  // Use actual color values
+        font-weight: 700
+
+      p
+        margin-top: 0
+
+    &--content
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-top: 20px
+
+    .map-container
+      width: 100%
+      max-width: 500px  // Ensure the map has a max width
+      height: 300px  // Adjust height
+      margin-right: 20px
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5)  // Optional: add shadow to map
+
+    &--options
+      margin: 0
+      padding: 0
+      list-style: none
+
+      & > li
+        width: 130px
+        margin: 0 auto 25px
+
+      li:nth-child(1)
+        background-color: #1769ff
+
+      li:nth-child(2)
+        background-color: #ea4c89
+
+      li:nth-child(3)
+        margin-bottom: 0
+        background-color: #FF5733  // Example: Use actual highlight color
+        text-transform: uppercase
+
+      a
+        display: block
+        width: 100%
+        padding: 8px 0
+        text-decoration: none
+        color: #fff
+        font-weight: 700
